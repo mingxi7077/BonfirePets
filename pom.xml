@@ -11,6 +11,22 @@
 
     <name>BonfirePets</name>
     <description>BetterModel-based MCPets replacement and migration runtime for Bonfire 5.0</description>
+    <url>https://github.com/mingxi7077/BonfirePets</url>
+
+    <licenses>
+        <license>
+            <name>GNU General Public License v3.0</name>
+            <url>https://www.gnu.org/licenses/gpl-3.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/mingxi7077/BonfirePets</url>
+        <connection>scm:git:https://github.com/mingxi7077/BonfirePets.git</connection>
+        <developerConnection>scm:git:https://github.com/mingxi7077/BonfirePets.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
 
     <properties>
         <java.version>21</java.version>

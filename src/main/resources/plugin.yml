@@ -4,6 +4,7 @@ main: com.bonfire.pets.BonfirePets
 api-version: '1.21'
 description: BetterModel-based MCPets replacement and migration runtime
 authors: [Bonfire]
+website: https://github.com/mingxi7077/BonfirePets
 softdepend: [BetterModel, MythicMobs, MythicLib, MythicCrucible, ItemsAdder, PlaceholderAPI, LuckPerms, Vault, CMI]
 commands:
   bpet:
