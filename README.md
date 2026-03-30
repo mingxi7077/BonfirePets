@@ -1,30 +1,38 @@
 # BonfirePets
 
-`BonfirePets` is the 5.0 replacement baseline for `MCPets + ModelEngine`.
+![License](https://img.shields.io/badge/license-GPL--3.0-blue)
+![Platform](https://img.shields.io/badge/platform-Paper%201.21.8-brightgreen)
+![Java](https://img.shields.io/badge/java-21-orange)
+![Status](https://img.shields.io/badge/status-active-success)
 
-Current scope:
+BonfirePets is the Bonfire 5.0 runtime replacement for `MCPets + ModelEngine`, rebuilt around BetterModel and a safer migration pipeline.
 
-- imports legacy `MCPets` pets, categories, menu assets, player data, and optional MySQL rows into a standalone SQLite database
-- validates legacy MythicMobs / BetterModel compatibility before import
-- stores rollback snapshots and migration records for cold-start rollback
-- exposes `/bpet import`, `/bpet validate`, `/bpet rollback`, `/bpet give`, `/bpet debug mount`, and `/bpet debug tracker`
+## Highlights
 
-Build:
+- Imports legacy MCPets pets, categories, menu assets, player data, and optional MySQL rows.
+- Validates BetterModel and MythicMobs compatibility before migration.
+- Stores snapshots, rollback jobs, and migration records for cold-start recovery.
+- Exposes import, validation, rollback, give, and runtime debug commands through `/bpet`.
+
+## Core Commands
+
+- `/bpet import`
+- `/bpet validate`
+- `/bpet rollback`
+- `/bpet give`
+- `/bpet debug`
+
+## Build
 
 ```powershell
-& 'C:\Program Files\Zulu\zulu-21\bin\java.exe' `
-  -classpath '.mvn\wrapper\maven-wrapper.jar' `
-  '-Dmaven.multiModuleProjectDirectory=E:\Minecraft\12121\purpur第四版\二、插件开发区\源码工程\BonfirePets' `
-  org.apache.maven.wrapper.MavenWrapperMain -q -DskipTests package
+.\mvnw.cmd -q -DskipTests package
 ```
 
-5.0 baseline sync:
+## Repository Scope
 
-```powershell
-powershell -ExecutionPolicy Bypass -File `
-  'E:\Minecraft\12121\purpur第四版\一、服务器核心区\5.0正式服核心\工具\Prepare-BetterModelBaseline.ps1'
-```
+- This repository tracks source, config templates, and migration logic only.
+- Build outputs, deployment bundles, and local probes are intentionally excluded from Git.
 
-Known runtime gap:
+## License
 
-- BetterModel jar still needs to be provided manually to the 5.0 `server/plugins` directory before live runtime validation.
+GPL-3.0
