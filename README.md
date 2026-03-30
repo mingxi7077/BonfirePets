@@ -1,6 +1,7 @@
 # BonfirePets
 
-![License](https://img.shields.io/badge/license-GPL--3.0-blue)
+![License](https://img.shields.io/badge/license-BNSL--1.0-red)
+![Commercial Use](https://img.shields.io/badge/commercial-use%20by%20written%20permission%20only-critical)
 ![Platform](https://img.shields.io/badge/platform-Paper%201.21.8-brightgreen)
 ![Java](https://img.shields.io/badge/java-21-orange)
 ![Status](https://img.shields.io/badge/status-active-success)
@@ -35,4 +36,6 @@ BonfirePets is the Bonfire 5.0 runtime replacement for `MCPets + ModelEngine`, r
 
 ## License
 
-GPL-3.0
+Bonfire Non-Commercial Source License 1.0
+
+Commercial use is prohibited unless you first obtain written permission from `mingxi7707@qq.com`.
