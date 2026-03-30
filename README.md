@@ -8,6 +8,8 @@
 
 BonfirePets is the Bonfire 5.0 runtime replacement for `MCPets + ModelEngine`, rebuilt around BetterModel and a safer migration pipeline.
 
+> Non-commercial source-available. Commercial use requires prior written permission via `mingxi7707@qq.com`.
+
 ## Highlights
 
 - Imports legacy MCPets pets, categories, menu assets, player data, and optional MySQL rows.
