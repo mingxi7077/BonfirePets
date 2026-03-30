@@ -1,0 +1,33 @@
+enabled: true
+admin-permission: bonfire.pets.admin
+
+storage:
+  sqlite-path: database/bonfirepets.db
+
+paths:
+  legacy-plugins-dir: 'E:/Minecraft/12121/purpur第四版/一、服务器核心区/4.0正式服核心/server/plugins'
+  target-plugins-dir: 'E:/Minecraft/12121/purpur第四版/一、服务器核心区/5.0正式服核心/server/plugins'
+  migration-workspace-dir: 'E:/Minecraft/12121/purpur第四版/一、服务器核心区/5.0正式服核心/server/migration-input'
+  reports-dir: reports
+  exports-dir: exports
+
+legacy:
+  mcpets-dir: MCPets
+  mythicmobs-dir: MythicMobs
+  itemsadder-dir: ItemsAdder
+  mcpets-config-file: MCPets/config.yml
+  menu-icons-file: MCPets/menuIcons.yml
+  pet-foods-file: MCPets/petfoods.yml
+  player-data-dir: MCPets/PlayerData
+  import-mysql-when-available: true
+  mysql-connect-timeout-seconds: 8
+
+bettermodel:
+  register-event-hooks: true
+  require-plugin-for-import-validation: false
+
+validation:
+  write-report-file: true
+  sample-issue-limit: 20
+  strict-model-check: false
+  strict-mythicmobs-check: true

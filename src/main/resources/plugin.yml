@@ -1,0 +1,17 @@
+name: BonfirePets
+version: '${project.version}'
+main: com.bonfire.pets.BonfirePets
+api-version: '1.21'
+description: BetterModel-based MCPets replacement and migration runtime
+authors: [Bonfire]
+softdepend: [BetterModel, MythicMobs, MythicLib, MythicCrucible, ItemsAdder, PlaceholderAPI, LuckPerms, Vault, CMI]
+commands:
+  bpet:
+    description: Main command for BonfirePets, use /bpet help for Chinese help
+    aliases: [bpet]
+    permission: bonfire.pets.admin
+    usage: /bpet <help|import|validate|rollback|give|debug>
+permissions:
+  bonfire.pets.admin:
+    default: op
+    description: Allows administrative access to BonfirePets
