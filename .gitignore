@@ -33,6 +33,7 @@ deploy/
 *.bak
 **/tmp_*/
 **/.tmp*/
+tmp_*.txt
 __pycache__/
 .venv/
 
